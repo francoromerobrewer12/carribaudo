@@ -1,0 +1,22 @@
+@import './variables.scss';
+
+.Footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    .logo{
+        width: 143px;
+        height: 90px;
+    }
+
+    .nav-items a {
+        color: $dark;
+        text-decoration: none;
+    }
+
+    .privacy-terms{
+        color: $dark;
+    }
+}
