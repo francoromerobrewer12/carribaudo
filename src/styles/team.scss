@@ -1,0 +1,54 @@
+@import './variables.scss';
+
+.Team{
+
+    .founder-name{
+        color: $primary;
+    }
+
+    .founder-content-container{
+
+        .founder-description{
+            max-width: 50%;
+
+            .role{
+                color: $secondary;
+            }
+
+        }
+        .founder-img{
+            width: 352px;
+            height: 352px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .founder-content-container{
+            .founder-description{
+                max-width: 80%;
+            }
+        }
+    }
+
+    .experience-container{
+        h1{
+            color: $primary;
+        }
+
+        p{
+            color: $secondary;
+        }
+    }
+
+    .studies-container{
+        h1, p{
+            color: $primary;
+        }
+
+        h5{
+            color: $secondary;
+        }
+    }
+
+
+}
