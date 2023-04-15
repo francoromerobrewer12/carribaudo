@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+.banner-container{
+    background-color: $primary;
+    color: $light;
+
+    .banner-button{
+        background-color: $light;
+        color: $dark;
+        text-decoration: none;
+        border-radius: 24px;
+    }
+
+    .banner-text-wrapper{
+        width: 50%
+    }
+
+    @media (max-width: 700px) {
+        .banner-logo {
+            width: 143px;
+            height: 90px;
+        }
+
+        .banner-text-wrapper{
+            width: 100%
+        }
+    }
+
+}

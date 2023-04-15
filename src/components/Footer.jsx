@@ -1,7 +1,7 @@
 import '../styles/footer.scss'
 import { Link } from 'react-router-dom';
 
-function Footer() {
+export default function Footer() {
     return (
         <div className="Footer py-4">
             <div className="container-lg d-flex flex-column flex-lg-row align-items-center justify-content-between">
@@ -27,5 +27,3 @@ function Footer() {
         </div>
     );
 }
-
-export default Footer;
