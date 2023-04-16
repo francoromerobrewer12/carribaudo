@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+.contact-container{
+    width: 100%;
+
+    h1{
+        color: $primary;
+    }
+
+    p{
+        color: $dark;
+    }
+
+    .img {
+        width: 50%;
+        height: 100%;
+    }
+
+    @media (max-width: 769px) {
+        .img {
+            width: 100%;
+        }
+    }
+
+}

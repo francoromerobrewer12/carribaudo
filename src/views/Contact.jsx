@@ -1,9 +1,11 @@
 import Form from "../components/Form";
 import CompanyBanner from "../components/CompanyBanner";
+import ContactBanner from "../components/ContactBanner";
 
 export default function Contact() {
     return (
         <div className="Contact">
+            <ContactBanner />
             <Form />
             <CompanyBanner
                 title='FIND OUT MORE'
