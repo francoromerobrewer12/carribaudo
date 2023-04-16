@@ -1,0 +1,35 @@
+@import './variables.scss';
+
+.franchise-benefits-container{
+    .title{
+        color: $primary;
+    }
+
+    .benefits-container{
+        .benefit{
+            width: 50%;
+
+            .benefit-img{
+                width: 150px;
+                height: 96px;
+            }
+        }
+
+    }
+
+    .button{
+        background-color: $primary;
+        color: $light;
+        text-decoration: none;
+        border-radius: 24px;
+    }
+
+    @media (max-width: 700px) {
+        .benefits-container{
+            .benefit{
+                width: 90%;
+            }
+
+        }
+    }
+}
