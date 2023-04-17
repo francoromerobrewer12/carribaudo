@@ -1,8 +1,21 @@
 import '../styles/home.scss';
-import CompanyBanner from "../components/CompanyBanner";
 import { Link } from 'react-router-dom';
+import { configuration } from '../configuration';
+import CompanyBanner from "../components/CompanyBanner";
 
 export default function Home() {
+
+    const {
+        section_one,
+        section_two,
+        section_three,
+        section_four,
+        company_banner_title,
+        company_banner_text,
+        company_banner_image,
+        company_banner_button_text
+    } = configuration.home
+
     return (
         <div className="Home">
             <div className="container-lg d-flex flex-column-reverse flex-md-row justify-content-md-around align-items-center py-5">
@@ -12,23 +25,11 @@ export default function Home() {
                     alt="logo"
                 />
                 <div className="section-one-text-wrapper text-center text-md-start">
-                    <h1 className="title">WHAT WE DO</h1>
+                    <h1 className="title">{section_one.title}</h1>
                     <div className="hr mb-3"></div>
-                    <p className="section-one-description">
-                        Link USA is a consulting and business advisory 
-                        services franchise with a passion for assisting 
-                        entrepreneurs with all-in-one investment and relocation 
-                        concierge services for a move to the United States.
-                        With a focus on  Spanish-speaking entrepreneurs, 
-                        we can help you find the right investment opportunity
-                        in the USA and ensure a smooth and seamless relocation
-                        process. Our services include assistance with business
-                        and real estate purchases, contract analysis and drafting,
-                        business plan writing, and introduction into professional 
-                        networks. We also provide personal assistance to help you 
-                        open bank accounts, buy a house, find the right school for
-                        your children, and more. 
-                    </p>
+                    {
+                        section_one.texts.map(element => <p key={element.id} className="section-one-description mb-2">{element.text}</p>)
+                    }
                 </div>
             </div>
 
@@ -37,44 +38,30 @@ export default function Home() {
             </div>
 
             <div className="container-lg d-flex flex-column flex-md-row align-items-center justify-content-md-around pt-5 pb-3">
-                <h1 className="title mb-5 mb-md-0">HOW WE DO IT</h1>
+                <h1 className="title mb-5 mb-md-0">{section_two.title}</h1>
                 <div className="areas-list">
-                    <p className="text-above-list">At Link USA we specialize in three areas:</p>
-                    <p className="list-element mb-0">1. Investment Guidance </p>
-                    <p className="list-element mb-0">2. Personal Support </p>
-                    <p className="list-element mb-0">3. Professional Networks Access and Introduction</p>
-                    <p className="text-under-list mt-3">While we assist all types of Spanish-speaking entrepreneurs, we focus specifically on Hispanic businesswomen and their families who are looking to invest in the USA.</p>
+                    <p className="text-above-list">{section_two.above_list_text}</p>
+                    {
+                        section_two.list.map(element => <p key={element.id} className="list-element mb-0">{element.text}</p>)
+                    }
+                    <p className="text-under-list mt-3">{section_two.under_list_text}</p>
                 </div>
             </div>
 
             <div className="d-flex flex-column flex-md-row flex-wrap justify-content-around pb-5">
-                <div className="d-flex flex-column align-items-center text-center">
-                    <img
-                        className="area-logo"
-                        src="https://www.linkusa.us/wp-content/uploads/go-x/u/13ca713d-95f3-416f-822f-30dd64d6ddcb/l0,t0,w2000,h1679/image-768x645.png"
-                        alt="area-logo"
-                    />
-                    <h3 className="title">1. INVESTMENT GUIDANCE</h3>
-                    <p className="description">We use our years of experience, deep industry knowhow, and strong local networks to link great investment opportunities with passionate entrepreneurs and businesspeople. We have expertise in business brokerage and real estate investment to help you find the perfect professional opportunity.</p>
-                </div>
-                <div className="d-flex flex-column align-items-center text-center">
-                    <img
-                        className="area-logo"
-                        src="https://www.linkusa.us/wp-content/uploads/go-x/u/13ca713d-95f3-416f-822f-30dd64d6ddcb/l0,t0,w2000,h1679/image-768x645.png"
-                        alt="area-logo"
-                    />
-                    <h3 className="title">1. INVESTMENT GUIDANCE</h3>
-                    <p className="description">We use our years of experience, deep industry knowhow, and strong local networks to link great investment opportunities with passionate entrepreneurs and businesspeople. We have expertise in business brokerage and real estate investment to help you find the perfect professional opportunity.</p>
-                </div>
-                <div className="d-flex flex-column align-items-center text-center">
-                    <img
-                        className="area-logo"
-                        src="https://www.linkusa.us/wp-content/uploads/go-x/u/13ca713d-95f3-416f-822f-30dd64d6ddcb/l0,t0,w2000,h1679/image-768x645.png"
-                        alt="area-logo"
-                    />
-                    <h3 className="title">1. INVESTMENT GUIDANCE</h3>
-                    <p className="description">We use our years of experience, deep industry knowhow, and strong local networks to link great investment opportunities with passionate entrepreneurs and businesspeople. We have expertise in business brokerage and real estate investment to help you find the perfect professional opportunity.</p>
-                </div>
+                {
+                    section_two.items.map(element => {
+                        return <div key={element.id} className="d-flex flex-column align-items-center text-center">
+                            <img
+                                className="area-logo"
+                                src="https://www.linkusa.us/wp-content/uploads/go-x/u/13ca713d-95f3-416f-822f-30dd64d6ddcb/l0,t0,w2000,h1679/image-768x645.png"
+                                alt="area-logo"
+                            />
+                            <h3 className="title">{element.title}</h3>
+                            <p className="description">{element.text}</p>
+                        </div>
+                    })
+                }
             </div>
 
             <div className="container-lg d-flex flex-column-reverse flex-md-row justify-content-md-around align-items-center py-5">
@@ -84,25 +71,13 @@ export default function Home() {
                     alt="logo"
                 />
                 <div className="section-one-text-wrapper text-center text-md-start">
-                    <h1 className="title">BECOME A LINK USA FRANCHISEE</h1>
+                    <h1 className="title">{section_three.title}</h1>
                     <div className="hr my-4"></div>
-                    <p className="section-one-description">
-                        Link USA is a consulting and business advisory 
-                        services franchise with a passion for assisting 
-                        entrepreneurs with all-in-one investment and relocation 
-                        concierge services for a move to the United States.
-                        With a focus on  Spanish-speaking entrepreneurs, 
-                        we can help you find the right investment opportunity
-                        in the USA and ensure a smooth and seamless relocation
-                        process. Our services include assistance with business
-                        and real estate purchases, contract analysis and drafting,
-                        business plan writing, and introduction into professional 
-                        networks. We also provide personal assistance to help you 
-                        open bank accounts, buy a house, find the right school for
-                        your children, and more. 
-                    </p>
+                    {
+                        section_three.texts.map((element) => <p key={element.id} className="section-one-description">{element.text}</p>)
+                    }
                     <div className="d-flex justify-content-center">
-                        <Link to="/contact" className="button py-2 px-3">LEARN MORE</Link>
+                        <Link to="/contact" className="button py-2 px-3">{section_three.button_text}</Link>
                     </div>
                 </div>
             </div>
@@ -114,21 +89,21 @@ export default function Home() {
                     alt="logo"
                 />
                 <div className="section-one-text-wrapper text-center text-md-start">
-                    <h1 className="title">WHO WE ARE</h1>
+                    <h1 className="title">{section_four.title}</h1>
                     <div className="hr my-4"></div>
-                    <p className="section-one-description">
-                        The Link USA team are highly qualified in a range of areas and have years of experience in relocation and travel services as well as business advisory assistance to clients.With deep expertise in real estate investment and business brokerage services, and a focus on assisting Latin American families, the Link USA team is passionate about guiding entrepreneurs through a successful transition to the US.
-                    </p>
+                    {
+                        section_four.texts.map((element) => <p key={element.id} className="section-one-description">{element.text}</p>)
+                    }
                     <div className="d-flex justify-content-center">
-                        <Link to="/team" className="button py-2 px-3">LEARN MORE</Link>
+                        <Link to="/team" className="button py-2 px-3">{section_four.button_text}</Link>
                     </div>
                 </div>
             </div>
 
             <CompanyBanner
-                title='LINK UP WITH US'
-                description='To find out more about how we can help you with your move to the USA, or to learn more about our franchise opportunities, please get in touch. We would love to connect.'
-                buttonText='CONTACT US'
+                title={company_banner_title}
+                description={company_banner_text}
+                buttonText={company_banner_button_text}
                 buttonLink='/contact'
             />
         </div>

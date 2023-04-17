@@ -1,4 +1,95 @@
 export const configuration = {
+    home: {
+        section_one: {
+            title: 'WHAT WE DO',
+            texts: [
+                {
+                    id: 0,
+                    text: 'Link USA is a consulting and business advisory services franchise with a passion for assisting entrepreneurs with all-in-one investment and relocation concierge services for a move to the United States. With a focus on  Spanish-speaking entrepreneurs, we can help you find the right investment opportunity in the USA and ensure a smooth and seamless relocation process.',
+                },
+                {
+                    id: 1,
+                    text: 'Our services include assistance with business and real estate purchases, contract analysis and drafting, business plan writing, and introduction into professional networks. We also provide personal assistance to help you open bank accounts, buy a house, find the right school for your children, and more.'
+                }
+            ],
+            logo: ''
+        },
+        section_two: {
+            title: 'HOW WE DO IT',
+            above_list_text: 'At Link USA we specialize in three areas:',
+            list: [
+                {
+                    id: 2,
+                    text: '1. Investment Guidance'
+                },
+                {
+                    id: 3,
+                    text: '2. Personal Support'
+                },
+                {
+                    id: 4,
+                    text: '3. Professional Networks Access and Introduction'
+                }
+            ],
+            under_list_text: 'While we assist all types of Spanish-speaking entrepreneurs, we focus specifically on Hispanic businesswomen and their families who are looking to invest in the USA.',
+
+            items: [
+                {
+                    id: 5,
+                    title: '1. INVESTMENT GUIDANCE',
+                    text: 'We use our years of experience, deep industry knowhow, and strong local networks to link great investment opportunities with passionate entrepreneurs and businesspeople. We have expertise in business brokerage and real estate investment to help you find the perfect professional opportunity.',
+                    image: ''
+                },
+                {
+                    id: 6,
+                    title: '2. PERSONAL SUPPORT',
+                    text: 'Transitioning to new places can be a challenge for anyone. We assist and support with a wide range of personal needs in the USA, such as opening bank accounts, accessing local schools, and finding your new home.',
+                    image: ''
+                },
+                {
+                    id: 7,
+                    title: '3. NETWORK INTRODUCTIONS',
+                    text: 'A new location often means new social and professional groups. We assist with introductions into professional networks to help reduce the complexities of building new social and business relationships in an unfamiliar context.',
+                    image: ''
+                }
+            ]
+        },
+        section_three: {
+            title: 'BECOME A LINK USA FRANCHISEE',
+            image: '',
+            texts: [
+                {
+                    id: 8,
+                    text: `Link USA has developed a proven methodology to bring our business model to budding entrepreneurs across the USA to enable them to offer their own clients the full range of Link USA's professional services.`,
+                },
+                {
+                    id: 9,
+                    text: `Latin American immigrants are one of the fastest growing segments of the US population and a third of Hispanic immigrants are more likely to own their own businesses compared to the overall US population. Be a part of a growing market that is a huge contributor to job creation and a successful US economy.`,
+                }
+            ],
+            button_text: 'LEARN MORE'
+        },
+        section_four: {
+            title: 'Who We Are',
+            image: '',
+            texts: [
+                {
+                    id: 10,
+                    text: `The Link USA team are highly qualified in a range of areas and have years of experience in relocation and travel services as well as business advisory assistance to clients.`,
+                },
+                {
+                    id: 11,
+                    text: `With deep expertise in real estate investment and business brokerage services, and a focus on assisting Latin American families, the Link USA team is passionate about guiding entrepreneurs through a successful transition to the US.`,
+                }
+            ],
+            button_text: 'LEARN MORE'
+        },
+
+        company_banner_title: 'LINK UP WITH US',
+        company_banner_text: 'To find out more about how we can help you with your move to the USA, or to learn more about our franchise opportunities, please get in touch. We would love to connect.',
+        company_banner_image: '',
+        company_banner_button_text: 'CONTACT US',
+    },
     franchise: {
         reasons_to_franchise: {
             title: 'WHY FRANCHISE WITH US?',
