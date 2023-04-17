@@ -1,5 +1,10 @@
 import '../styles/form.scss'
+import { configuration } from '../configuration';
+
 export default function Form() {
+
+    const { logo_image, email_address } = configuration.contact
+
     return (
         <div className="form-container d-flex justify-content-center py-5 w-100">
             <div className="container d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-sm-around">
@@ -15,7 +20,7 @@ export default function Form() {
                     <textarea name="message" id="message" cols="30" rows="5"></textarea>
                     <small className="my-2">* Indicates required fields</small>
                     <button className="submit-button py-2 mb-2 w-100" type="submit">Send</button>
-                    <small>Email: info@linkusa.us</small>
+                    <small>Email: {email_address}</small>
                 </div>
             </div>
         </div>

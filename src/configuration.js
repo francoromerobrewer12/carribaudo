@@ -118,5 +118,28 @@ export const configuration = {
         company_banner_image: '',
         company_banner_text: 'To find out more about how we can help you with your move to the USA, or to learn more about our franchise opportunities, please get in touch. We would love to connect.',
         company_banner_button_text: 'CONTACT US'
+    },
+    contact: {
+        banner_title: 'LINK UP WITH US',
+        banner_texts: [
+            {
+                id: 0,
+                text: 'To learn more about how we can help you relocate to the US, or how to franchise with us, please leave your details or link up with us through the contact form below.'
+            },
+            {
+                id: 1,
+                text: `We'd love to see how we can help.`
+            },
+        ],
+
+        logo_image: '',
+
+        email_address: 'info@linkusa.us',
+
+        company_banner_title: 'FIND OUT MORE',
+        company_banner_text: 'We offer great franchise opportunities for entrepreneurs to provide our signature services to their own clients. Find out more how to tap into this growing market throughout the US.',
+        company_banner_image: '',
+        company_banner_button_text: 'LEARN MORE',
+
     }
 }
