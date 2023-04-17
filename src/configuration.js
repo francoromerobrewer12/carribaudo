@@ -1,4 +1,64 @@
 export const configuration = {
+    franchise: {
+        reasons_to_franchise: {
+            title: 'WHY FRANCHISE WITH US?',
+            text: 'With an growing market that increasingly needs expert relocation and business advisory services, join us as part of a national franchise that focuses on providing excellent customer service and exceptional support to the Spanish-speaking entrepreneur community.',
+            reasons: [
+                {
+                    id: 0,
+                    title: '1. A GROWING MARKET',
+                    text: 'Latin American immigrants are one of the fastest growing segments of the US population. In 2019, there were more than 2.5 million Hispanic entrepreneurs in the US.',
+                },
+                {
+                    id: 1,
+                    title: '2. A PROVEN CONCEPT',
+                    text: 'The Link USA franchise is built on a foundation of industry best practice and years of successful experience in the field.',
+                },
+                {
+                    id: 2,
+                    title: '3. ONGOING SUPPORT',
+                    text: 'As a member of the Link USA family, we want you to be successful and are here to provide support throughout the journey to starting and growing a franchise in your area.',
+                }
+            ]
+        },
+        benefits_section: {
+            title: 'WHY FRANCHISE WITH US?',
+            description: 'Link USA will provide the following support to its franchisees:',
+            benefits_list: [
+                {
+                    id: 3,
+                    image: '',
+                    title: 'Training',
+                    text: `All franchisees will go through an intensive training program to ensure their skills and knowledge of Link USA's best practices. This will include training and required certifications in relocation and travel assistance, business brokerage activities, and real estate investment services.`,
+                },
+                {
+                    id: 4,
+                    image: '',
+                    title: 'Marketing',
+                    text: `Link USA will develop and manage campaigns and promotions for each region occupied by a franchise. Corporate marketing staff will work with franchisees to build positive community relationships, promote customer retention, and manage marketing and advertising events. Link USA will also provide a website and social media accounts for each franchise.`,
+                },
+                {
+                    id: 5,
+                    image: '',
+                    title: 'Quality Control',
+                    text: `Each franchise will be assigned a Quality Control Manager who will conduct focused training and ensure that franchise operations are running smoothly.`,
+                },
+                {
+                    id: 6,
+                    image: '',
+                    title: 'Technology',
+                    text: `Link USA will equip each franchise with IT solutions that streamline services, financial management, financial reporting, and inventory.`,
+                }
+            ],
+            button_text: 'FIND OUT MORE',
+
+        },
+
+        company_banner_title: 'LINK UP WITH US',
+        company_banner_text: 'To find out more about how we can help you with your move to the USA, or to learn more about our franchise opportunities, please get in touch. We would love to connect.',
+        company_banner_image: '',
+        company_banner_button_text: 'CONTACT US',
+    },
     team: {
         person_name: 'CAROLINA ACQUILA',
         person_role: 'Founder & CEO',
