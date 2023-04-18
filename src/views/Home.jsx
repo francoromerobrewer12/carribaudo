@@ -1,11 +1,13 @@
 import '../styles/home.scss';
 import { Link } from 'react-router-dom';
+import TopBanner from '../components/TopBanner';
 import { configuration } from '../configuration';
 import CompanyBanner from "../components/CompanyBanner";
 
 export default function Home() {
 
     const {
+        banner,
         section_one,
         section_two,
         section_three,
@@ -16,15 +18,10 @@ export default function Home() {
         company_banner_button_text
     } = configuration.home
 
-    // const styleLogo1={
-    //     backgroundImage: `url(${logo1})`,
-    //     width: '250px',
-    //     height: '100px',
-    //     backgroundSize: 'cover',
-    // }
-
     return (
         <div className="Home">
+            <TopBanner image={banner.image} text={banner.text}/>
+
             <div className="container-lg d-flex flex-column-reverse flex-md-row justify-content-md-around align-items-center py-5">
 
                 <img src={section_one.logo} className="home-logo mt-4 mt-md-0" alt="sda" />

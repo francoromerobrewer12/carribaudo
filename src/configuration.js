@@ -1,26 +1,44 @@
+// Navbar & Footer pictures
+import navbar_logo from '../src/pictures/navbar_logo.png'
+import footer_logo from '../src/pictures/footer_logo.png'
+
 // Home View pictures
-import logo_1 from '../src/pictures/logo_1.png'
+import top_banner_image from '../src/pictures/home_banner.jpeg'
+import home_logo from '../src/pictures/home_logo.png'
 import investment from '../src/pictures/investment.png'
 import investment1 from '../src/pictures/investment1.png'
 import investment2 from '../src/pictures/investment2.png'
 import handshake from '../src/pictures/handshake.jpg'
 import founder from '../src/pictures/founder.png'
-import logo_2 from '../src/pictures/logo_2.png'
+import home_bottom_banner from '../src/pictures/home_bottom_banner.png'
 
-// Franchise View pictures for benefits section, benefits list
+// Franchise View pictures
+import franchise_banner from '../src/pictures/franchise_banner.jpg'
 import training from '../src/pictures/training.png'
 import marketing from '../src/pictures/marketing.png'
 import quality from '../src/pictures/quality.png'
 import technology from '../src/pictures/technology.png'
+import franchise_bottom_banner_image from '../src/pictures/franchise_bottom_banner_image.png'
+
+// Team View pictures
+import team_founder from '../src/pictures/team_founder.png'
+import team_bottom_banner_image from '../src/pictures/team_bottom_banner_image.png'
 
 // Contact View pictures
 import contact_banner from '../src/pictures/contact_banner.jpeg'
+import form_image from '../src/pictures/form_image.png'
+import contact_bottom_banner_image from '../src/pictures/contact_bottom_banner_image.png'
+
 
 export const configuration = {
     navbar: {
-        logo: logo_2
+        logo: navbar_logo
     },
     home: {
+        banner: {
+            image: top_banner_image,
+            text: 'YOUR CURATED LINK TO THE UNITED STATES'
+        },
         section_one: {
             title: 'WHAT WE DO',
             texts: [
@@ -33,7 +51,7 @@ export const configuration = {
                     text: 'Our services include assistance with business and real estate purchases, contract analysis and drafting, business plan writing, and introduction into professional networks. We also provide personal assistance to help you open bank accounts, buy a house, find the right school for your children, and more.'
                 }
             ],
-            logo: logo_1
+            logo: home_logo
         },
         section_two: {
             title: 'HOW WE DO IT',
@@ -108,10 +126,14 @@ export const configuration = {
 
         company_banner_title: 'LINK UP WITH US',
         company_banner_text: 'To find out more about how we can help you with your move to the USA, or to learn more about our franchise opportunities, please get in touch. We would love to connect.',
-        company_banner_image: logo_2,
+        company_banner_image: home_bottom_banner,
         company_banner_button_text: 'CONTACT US',
     },
     franchise: {
+        banner: {
+            image: franchise_banner,
+            text: 'BECOME A LINK USA FRANCHISEE'
+        },
         reasons_to_franchise: {
             title: 'WHY FRANCHISE WITH US?',
             text: 'With an growing market that increasingly needs expert relocation and business advisory services, join us as part of a national franchise that focuses on providing excellent customer service and exceptional support to the Spanish-speaking entrepreneur community.',
@@ -168,13 +190,13 @@ export const configuration = {
 
         company_banner_title: 'LINK UP WITH US',
         company_banner_text: 'To find out more about how we can help you with your move to the USA, or to learn more about our franchise opportunities, please get in touch. We would love to connect.',
-        company_banner_image: logo_2,
+        company_banner_image: franchise_bottom_banner_image,
         company_banner_button_text: 'CONTACT US',
     },
     team: {
         person_name: 'CAROLINA ACQUILA',
         person_role: 'Founder & CEO',
-        person_image: founder,
+        person_image: team_founder,
         person_description: [
             {
                 id: 0,
@@ -287,7 +309,7 @@ export const configuration = {
         ],
 
         company_banner_title: 'LINK UP WITH US',
-        company_banner_image: logo_2,
+        company_banner_image: team_bottom_banner_image,
         company_banner_text: 'To find out more about how we can help you with your move to the USA, or to learn more about our franchise opportunities, please get in touch. We would love to connect.',
         company_banner_button_text: 'CONTACT US'
     },
@@ -305,17 +327,17 @@ export const configuration = {
         ],
         banner_image: contact_banner,
 
-        logo_image: logo_1,
+        logo_image: form_image,
 
         email_address: 'info@linkusa.us',
 
         company_banner_title: 'FIND OUT MORE',
         company_banner_text: 'We offer great franchise opportunities for entrepreneurs to provide our signature services to their own clients. Find out more how to tap into this growing market throughout the US.',
-        company_banner_image: logo_2,
+        company_banner_image: contact_bottom_banner_image,
         company_banner_button_text: 'LEARN MORE',
 
     },
     footer: {
-        logo: logo_1
+        logo: footer_logo
     }
 }

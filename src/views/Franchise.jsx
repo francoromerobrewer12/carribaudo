@@ -1,3 +1,4 @@
+import TopBanner from "../components/TopBanner";
 import { configuration } from "../configuration";
 import CompanyBanner from "../components/CompanyBanner";
 import FranchiseBenefits from "../components/FranchiseBenefits";
@@ -6,6 +7,7 @@ import ReasonsToFranchise from "../components/ReasonsToFranchise";
 export default function Franchise() {
 
     const {
+        banner,
         company_banner_title,
         company_banner_text,
         company_banner_image,
@@ -14,6 +16,7 @@ export default function Franchise() {
 
     return (
         <div className="Franchise">
+            <TopBanner image={banner.image} text={banner.text}/>
             <ReasonsToFranchise />
             <FranchiseBenefits />
             <CompanyBanner

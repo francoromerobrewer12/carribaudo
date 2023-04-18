@@ -7,7 +7,7 @@ export default function ReasonsToFranchise() {
     const { title, text, reasons } = configuration.franchise.reasons_to_franchise
 
     return (
-        <div className="reasons-container container-lg d-flex flex-column align-items-center justify-content-center py-4">
+        <div className="reasons-container container-lg d-flex flex-column align-items-center justify-content-center py-5">
             <h1 className="title text-center">{title}</h1>
             <p className="description mb-4">{text}</p>
 
