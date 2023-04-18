@@ -16,7 +16,7 @@ export default function FranchiseBenefits() {
                     benefits_list.map(element => {
                         return <div key={element.id} className="benefit d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-center my-3">
                             <img
-                                src="https://www.linkusa.us/wp-content/uploads/go-x/u/42964fbc-c81f-4bd2-8106-ef3a0c189d36/l0,t0,w600,h469/image-375x293.png"
+                                src={element.image}
                                 alt="benefit"
                                 className="benefit-img"
                             />

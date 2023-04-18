@@ -2,6 +2,7 @@ import '../styles/team.scss';
 import { configuration } from '../configuration';
 import CompanyBanner from "../components/CompanyBanner";
 
+
 export default function Team() {
 
     const {
@@ -31,7 +32,7 @@ export default function Team() {
                             person_description.map(element => <p key={element.id} className="mb-2">{element.text}</p>)
                         }
                     </div>
-                    <img src="https://www.linkusa.us/wp-content/uploads/go-x/u/0b0d9c04-baf6-4272-b961-aae58fa1899a/l0,t0,w2000,h2000/image-768x768.png" alt="founder" className="founder-img my-4 my-sm-0"/>
+                    <img src={person_image} alt="founder" className="founder-img my-4 my-sm-0"/>
                 </div>
             </div>
             {/* Founder */}
@@ -73,6 +74,7 @@ export default function Team() {
                 title={company_banner_title}
                 description={company_banner_text}
                 buttonText={company_banner_button_text}
+                image={company_banner_image}
                 buttonLink='/contact'
             />
         </div>

@@ -1,4 +1,25 @@
+// Home View pictures
+import logo_1 from '../src/pictures/logo_1.png'
+import investment from '../src/pictures/investment.png'
+import investment1 from '../src/pictures/investment1.png'
+import investment2 from '../src/pictures/investment2.png'
+import handshake from '../src/pictures/handshake.jpg'
+import founder from '../src/pictures/founder.png'
+import logo_2 from '../src/pictures/logo_2.png'
+
+// Franchise View pictures for benefits section, benefits list
+import training from '../src/pictures/training.png'
+import marketing from '../src/pictures/marketing.png'
+import quality from '../src/pictures/quality.png'
+import technology from '../src/pictures/technology.png'
+
+// Contact View pictures
+import contact_banner from '../src/pictures/contact_banner.jpeg'
+
 export const configuration = {
+    navbar: {
+        logo: logo_2
+    },
     home: {
         section_one: {
             title: 'WHAT WE DO',
@@ -12,7 +33,7 @@ export const configuration = {
                     text: 'Our services include assistance with business and real estate purchases, contract analysis and drafting, business plan writing, and introduction into professional networks. We also provide personal assistance to help you open bank accounts, buy a house, find the right school for your children, and more.'
                 }
             ],
-            logo: ''
+            logo: logo_1
         },
         section_two: {
             title: 'HOW WE DO IT',
@@ -38,25 +59,25 @@ export const configuration = {
                     id: 5,
                     title: '1. INVESTMENT GUIDANCE',
                     text: 'We use our years of experience, deep industry knowhow, and strong local networks to link great investment opportunities with passionate entrepreneurs and businesspeople. We have expertise in business brokerage and real estate investment to help you find the perfect professional opportunity.',
-                    image: ''
+                    image: investment
                 },
                 {
                     id: 6,
                     title: '2. PERSONAL SUPPORT',
                     text: 'Transitioning to new places can be a challenge for anyone. We assist and support with a wide range of personal needs in the USA, such as opening bank accounts, accessing local schools, and finding your new home.',
-                    image: ''
+                    image: investment1
                 },
                 {
                     id: 7,
                     title: '3. NETWORK INTRODUCTIONS',
                     text: 'A new location often means new social and professional groups. We assist with introductions into professional networks to help reduce the complexities of building new social and business relationships in an unfamiliar context.',
-                    image: ''
+                    image: investment2
                 }
             ]
         },
         section_three: {
             title: 'BECOME A LINK USA FRANCHISEE',
-            image: '',
+            image: handshake,
             texts: [
                 {
                     id: 8,
@@ -71,7 +92,7 @@ export const configuration = {
         },
         section_four: {
             title: 'Who We Are',
-            image: '',
+            image: founder,
             texts: [
                 {
                     id: 10,
@@ -87,7 +108,7 @@ export const configuration = {
 
         company_banner_title: 'LINK UP WITH US',
         company_banner_text: 'To find out more about how we can help you with your move to the USA, or to learn more about our franchise opportunities, please get in touch. We would love to connect.',
-        company_banner_image: '',
+        company_banner_image: logo_2,
         company_banner_button_text: 'CONTACT US',
     },
     franchise: {
@@ -118,25 +139,25 @@ export const configuration = {
             benefits_list: [
                 {
                     id: 3,
-                    image: '',
+                    image: training,
                     title: 'Training',
                     text: `All franchisees will go through an intensive training program to ensure their skills and knowledge of Link USA's best practices. This will include training and required certifications in relocation and travel assistance, business brokerage activities, and real estate investment services.`,
                 },
                 {
                     id: 4,
-                    image: '',
+                    image: marketing,
                     title: 'Marketing',
                     text: `Link USA will develop and manage campaigns and promotions for each region occupied by a franchise. Corporate marketing staff will work with franchisees to build positive community relationships, promote customer retention, and manage marketing and advertising events. Link USA will also provide a website and social media accounts for each franchise.`,
                 },
                 {
                     id: 5,
-                    image: '',
+                    image: quality,
                     title: 'Quality Control',
                     text: `Each franchise will be assigned a Quality Control Manager who will conduct focused training and ensure that franchise operations are running smoothly.`,
                 },
                 {
                     id: 6,
-                    image: '',
+                    image: technology,
                     title: 'Technology',
                     text: `Link USA will equip each franchise with IT solutions that streamline services, financial management, financial reporting, and inventory.`,
                 }
@@ -147,13 +168,13 @@ export const configuration = {
 
         company_banner_title: 'LINK UP WITH US',
         company_banner_text: 'To find out more about how we can help you with your move to the USA, or to learn more about our franchise opportunities, please get in touch. We would love to connect.',
-        company_banner_image: '',
+        company_banner_image: logo_2,
         company_banner_button_text: 'CONTACT US',
     },
     team: {
         person_name: 'CAROLINA ACQUILA',
         person_role: 'Founder & CEO',
-        person_image: '',
+        person_image: founder,
         person_description: [
             {
                 id: 0,
@@ -266,7 +287,7 @@ export const configuration = {
         ],
 
         company_banner_title: 'LINK UP WITH US',
-        company_banner_image: '',
+        company_banner_image: logo_2,
         company_banner_text: 'To find out more about how we can help you with your move to the USA, or to learn more about our franchise opportunities, please get in touch. We would love to connect.',
         company_banner_button_text: 'CONTACT US'
     },
@@ -282,15 +303,19 @@ export const configuration = {
                 text: `We'd love to see how we can help.`
             },
         ],
+        banner_image: contact_banner,
 
-        logo_image: '',
+        logo_image: logo_1,
 
         email_address: 'info@linkusa.us',
 
         company_banner_title: 'FIND OUT MORE',
         company_banner_text: 'We offer great franchise opportunities for entrepreneurs to provide our signature services to their own clients. Find out more how to tap into this growing market throughout the US.',
-        company_banner_image: '',
+        company_banner_image: logo_2,
         company_banner_button_text: 'LEARN MORE',
 
+    },
+    footer: {
+        logo: logo_1
     }
 }

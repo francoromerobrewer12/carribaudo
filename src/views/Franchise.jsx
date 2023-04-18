@@ -20,6 +20,7 @@ export default function Franchise() {
                 title={company_banner_title}
                 description={company_banner_text}
                 buttonText={company_banner_button_text}
+                image={company_banner_image}
                 buttonLink='/contact'
             />
         </div>

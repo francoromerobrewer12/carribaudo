@@ -2,7 +2,7 @@
 import '../styles/company_banner.scss'
 import { Link } from 'react-router-dom';
 
-export default function CompanyBanner({ title, description, buttonText, buttonLink }) {
+export default function CompanyBanner({ title, description, buttonText, buttonLink, image }) {
     return (
         <div className="banner-container py-5">
             <div className="container-lg d-flex flex-column-reverse flex-sm-row align-items-center justify-content-center">
@@ -13,7 +13,7 @@ export default function CompanyBanner({ title, description, buttonText, buttonLi
                 </div>
                 <img
                     className="banner-logo mb-5 mb-sm-0"
-                    src="https://www.linkusa.us/wp-content/uploads/go-x/u/9dd06bdd-d9a3-4824-b04b-59dd0b77e25e/image-342x216.png"
+                    src={image}
                     alt="logo"
                 />
             </div>

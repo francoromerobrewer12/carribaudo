@@ -10,7 +10,7 @@ export default function Form() {
             <div className="container d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-sm-around">
                 <img
                     className="logo mb-4 mb-md-0"
-                    src="https://www.linkusa.us/wp-content/uploads/go-x/u/217cae59-fd83-415d-815f-6605b92a49f8/image-228x144.png"
+                    src={logo_image}
                     alt="form-logo"
                 />
                 <div className="form-wrapper d-flex flex-column justify-content-center align-items-start">

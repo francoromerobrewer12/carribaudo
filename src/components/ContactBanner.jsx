@@ -6,14 +6,15 @@ export default function ContactBanner() {
 
     const {
         banner_title,
-        banner_texts
+        banner_texts,
+        banner_image
     } = configuration.contact
 
     return (
         <div className="contact-container d-flex flex-column-reverse flex-md-row align-items-center justify-content-center">
             <img
                 className="img mb-5 mb-sm-0"
-                src="https://images.pexels.com/photos/389819/pexels-photo-389819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src={banner_image}
                 alt="logo"
             />
 

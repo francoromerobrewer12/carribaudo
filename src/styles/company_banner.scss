@@ -4,6 +4,11 @@
     background-color: $primary;
     color: $light;
 
+    .banner-logo {
+        max-width: 392px;
+        height: 247px;
+    }
+
     .banner-button{
         background-color: $light;
         color: $dark;

@@ -16,14 +16,19 @@ export default function Home() {
         company_banner_button_text
     } = configuration.home
 
+    // const styleLogo1={
+    //     backgroundImage: `url(${logo1})`,
+    //     width: '250px',
+    //     height: '100px',
+    //     backgroundSize: 'cover',
+    // }
+
     return (
         <div className="Home">
             <div className="container-lg d-flex flex-column-reverse flex-md-row justify-content-md-around align-items-center py-5">
-                <img
-                    className="home-logo mt-4 mt-md-0"
-                    src="https://www.linkusa.us/wp-content/uploads/go-x/u/217cae59-fd83-415d-815f-6605b92a49f8/image-228x144.png"
-                    alt="logo"
-                />
+
+                <img src={section_one.logo} className="home-logo mt-4 mt-md-0" alt="sda" />
+
                 <div className="section-one-text-wrapper text-center text-md-start">
                     <h1 className="title">{section_one.title}</h1>
                     <div className="hr mb-3"></div>
@@ -54,7 +59,7 @@ export default function Home() {
                         return <div key={element.id} className="d-flex flex-column align-items-center text-center">
                             <img
                                 className="area-logo"
-                                src="https://www.linkusa.us/wp-content/uploads/go-x/u/13ca713d-95f3-416f-822f-30dd64d6ddcb/l0,t0,w2000,h1679/image-768x645.png"
+                                src={element.image}
                                 alt="area-logo"
                             />
                             <h3 className="title">{element.title}</h3>
@@ -67,7 +72,7 @@ export default function Home() {
             <div className="container-lg d-flex flex-column-reverse flex-md-row justify-content-md-around align-items-center py-5">
                 <img
                     className="link-logo mt-4 mt-md-0"
-                    src="https://www.linkusa.us/wp-content/uploads/go-x/u/5c875528-30f6-4e3d-bbb3-574bf2723974/l89,t0,w1822,h2000/image-768x843.jpg"
+                    src={section_three.image}
                     alt="logo"
                 />
                 <div className="section-one-text-wrapper text-center text-md-start">
@@ -85,7 +90,7 @@ export default function Home() {
             <div className="container-lg d-flex flex-column-reverse flex-md-row justify-content-md-around align-items-center py-5">
                 <img
                     className="person-img mt-4 mt-md-0"
-                    src="https://www.linkusa.us/wp-content/uploads/go-x/u/775422a7-900f-472a-9c61-57eed9fa7b9a/l0,t166,w1500,h1500/image-768x768.jpg"
+                    src={section_four.image}
                     alt="logo"
                 />
                 <div className="section-one-text-wrapper text-center text-md-start">
@@ -104,6 +109,7 @@ export default function Home() {
                 title={company_banner_title}
                 description={company_banner_text}
                 buttonText={company_banner_button_text}
+                image={company_banner_image}
                 buttonLink='/contact'
             />
         </div>
