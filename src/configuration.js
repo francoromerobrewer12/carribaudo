@@ -328,8 +328,12 @@ export const configuration = {
         banner_image: contact_banner,
 
         logo_image: form_image,
-
         email_address: 'info@linkusa.us',
+
+        // EMAIL CONFIGURATION
+        service_id: 'service_7vze12y',
+        template_id: 'template_v6scn9u',
+        api_key: 'QMfNPlR-AhxLo-D29',
 
         company_banner_title: 'FIND OUT MORE',
         company_banner_text: 'We offer great franchise opportunities for entrepreneurs to provide our signature services to their own clients. Find out more how to tap into this growing market throughout the US.',

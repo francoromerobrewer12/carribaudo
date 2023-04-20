@@ -11,11 +11,13 @@ const Navbar = () => {
     return (
         <div className="navbar-container d-flex justify-content-center">
             <div className="Navbar container-lg d-flex align-items-center justify-content-between">
-                <img
-                    className="nav-logo"
-                    src={logo}
-                    alt="logo"
-                />
+                <a href="/" className="nav-logo-wrapper">
+                    <img
+                        className="w-100 h-100"
+                        src={logo}
+                        alt="logo"
+                    />
+                </a>
                 <div className={`nav-items ${isOpen && "open"}`}>
                     <Link to="/" onClick={() => setIsOpen(!isOpen)}>LINK USA</Link>
                     <Link to="/franchise" onClick={() => setIsOpen(!isOpen)}>FRANCHISE WITH US</Link>
