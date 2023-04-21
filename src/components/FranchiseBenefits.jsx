@@ -5,6 +5,7 @@ import { configuration } from '../configuration';
 export default function FranchiseBenefits() {
 
     const { title, description, benefits_list, button_text } = configuration.franchise.benefits_section
+    const { contact } = configuration.navigation
 
     return (
         <div className="franchise-benefits-container container-lg py-5">
@@ -30,7 +31,7 @@ export default function FranchiseBenefits() {
             </div>
 
             <div className="d-flex justify-content-center align-items-center">
-                <Link to="/contact" className="button py-2 px-4">{button_text}</Link>
+                <Link to={contact.link} className="button py-2 px-4">{button_text}</Link>
             </div>
         </div>
     );

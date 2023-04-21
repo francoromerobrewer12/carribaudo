@@ -31,6 +31,24 @@ import contact_bottom_banner_image from '../src/pictures/contact_bottom_banner_i
 
 
 export const configuration = {
+    navigation:{
+        home: {
+            link: '/',
+            name: 'LINK USA'
+        },
+        view_one: {
+            link: '/franchise',
+            name: 'FRANCHISE WITH US'
+        },
+        view_two: {
+            link: '/team',
+            name: 'TEAM'
+        },
+        contact: {
+            link: '/contact',
+            name: 'CONTACT'
+        }
+    },
     navbar: {
         logo: navbar_logo
     },
@@ -152,7 +170,7 @@ export const configuration = {
                     id: 2,
                     title: '3. ONGOING SUPPORT',
                     text: 'As a member of the Link USA family, we want you to be successful and are here to provide support throughout the journey to starting and growing a franchise in your area.',
-                }
+                },
             ]
         },
         benefits_section: {

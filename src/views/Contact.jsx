@@ -11,6 +11,7 @@ export default function Contact() {
         company_banner_image,
         company_banner_button_text
     } = configuration.contact
+    const { view_one } = configuration.navigation
 
     return (
         <div className="Contact">
@@ -21,7 +22,7 @@ export default function Contact() {
                 description={company_banner_text}
                 buttonText={company_banner_button_text}
                 image={company_banner_image}
-                buttonLink='/franchise'
+                buttonLink={view_one.link}
             />
         </div>
     );

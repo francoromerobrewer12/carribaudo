@@ -6,12 +6,14 @@ import { configuration } from "../configuration";
 const Navbar = () => {
 
     const { logo } = configuration.navbar;
+    const { home, view_one, view_two, contact } = configuration.navigation
+
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <div className="navbar-container d-flex justify-content-center">
             <div className="Navbar container-lg d-flex align-items-center justify-content-between">
-                <a href="/" className="nav-logo-wrapper">
+                <a href={home.link} className="nav-logo-wrapper">
                     <img
                         className="w-100 h-100"
                         src={logo}
@@ -19,10 +21,10 @@ const Navbar = () => {
                     />
                 </a>
                 <div className={`nav-items ${isOpen && "open"}`}>
-                    <Link to="/" onClick={() => setIsOpen(!isOpen)}>LINK USA</Link>
-                    <Link to="/franchise" onClick={() => setIsOpen(!isOpen)}>FRANCHISE WITH US</Link>
-                    <Link to="/team" onClick={() => setIsOpen(!isOpen)}>TEAM</Link>
-                    <Link to="/contact" onClick={() => setIsOpen(!isOpen)}>CONTACT</Link>
+                    <Link to={home.link} onClick={() => setIsOpen(!isOpen)}>{home.name}</Link>
+                    <Link to={view_one.link} onClick={() => setIsOpen(!isOpen)}>{view_one.name}</Link>
+                    <Link to={view_two.link} onClick={() => setIsOpen(!isOpen)}>{view_two.name}</Link>
+                    <Link to={contact.link} onClick={() => setIsOpen(!isOpen)}>{contact.name}</Link>
                 </div>
                 <div
                     className={`nav-toggle ${isOpen && "open"}`}

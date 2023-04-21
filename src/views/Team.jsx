@@ -19,6 +19,7 @@ export default function Team() {
         company_banner_text,
         company_banner_button_text
     } = configuration.team
+    const { contact } = configuration.navigation
 
     return (
         <div className="Team">
@@ -75,7 +76,7 @@ export default function Team() {
                 description={company_banner_text}
                 buttonText={company_banner_button_text}
                 image={company_banner_image}
-                buttonLink='/contact'
+                buttonLink={contact.link}
             />
         </div>
     );

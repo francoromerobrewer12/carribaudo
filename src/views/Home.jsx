@@ -17,6 +17,7 @@ export default function Home() {
         company_banner_image,
         company_banner_button_text
     } = configuration.home
+    const { view_two, contact } = configuration.navigation
 
     return (
         <div className="Home">
@@ -79,7 +80,7 @@ export default function Home() {
                         section_three.texts.map((element) => <p key={element.id} className="section-one-description">{element.text}</p>)
                     }
                     <div className="d-flex justify-content-center">
-                        <Link to="/contact" className="button py-2 px-3">{section_three.button_text}</Link>
+                        <Link to={contact.link} className="button py-2 px-3">{section_three.button_text}</Link>
                     </div>
                 </div>
             </div>
@@ -97,7 +98,7 @@ export default function Home() {
                         section_four.texts.map((element) => <p key={element.id} className="section-one-description">{element.text}</p>)
                     }
                     <div className="d-flex justify-content-center">
-                        <Link to="/team" className="button py-2 px-3">{section_four.button_text}</Link>
+                        <Link to={view_two.link} className="button py-2 px-3">{section_four.button_text}</Link>
                     </div>
                 </div>
             </div>
@@ -107,7 +108,7 @@ export default function Home() {
                 description={company_banner_text}
                 buttonText={company_banner_button_text}
                 image={company_banner_image}
-                buttonLink='/contact'
+                buttonLink={contact.link}
             />
         </div>
     );

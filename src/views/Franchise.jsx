@@ -13,6 +13,7 @@ export default function Franchise() {
         company_banner_image,
         company_banner_button_text
     } = configuration.franchise
+    const { contact } = configuration.navigation
 
     return (
         <div className="Franchise">
@@ -24,7 +25,7 @@ export default function Franchise() {
                 description={company_banner_text}
                 buttonText={company_banner_button_text}
                 image={company_banner_image}
-                buttonLink='/contact'
+                buttonLink={contact.link}
             />
         </div>
     );
