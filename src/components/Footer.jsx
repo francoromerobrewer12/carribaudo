@@ -25,7 +25,7 @@ export default function Footer() {
                     <Link to={contact.link} className="mx-3">{contact.name}</Link>
                 </div>
 
-                <p className="text-center text-sm-right my-0">
+                <p className="copyright text-center text-sm-right my-0">
                     © 2023. All rights reserved.
                     <a href="https://www.linkusa.us/privacy-policy/" className="privacy-terms my-0">Privacy Policy</a>
                     .

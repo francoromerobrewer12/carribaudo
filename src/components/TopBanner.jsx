@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/topbanner.scss';
 
 function TopBanner({ image, text}) {
 
@@ -17,7 +18,6 @@ function TopBanner({ image, text}) {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     zIndex: '1',
-    color: 'white',
     textAlign: 'center',
     textShadow: '1px 1px 2px black',
     fontSize: '3rem',

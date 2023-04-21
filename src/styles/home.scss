@@ -20,6 +20,10 @@
             background-color: $secondary;
         }
 
+        .section-one-description{
+            color: $dark;
+        }
+
         .button{
             background-color: $primary;
             border-radius: 24px;
@@ -43,6 +47,10 @@
     .areas-list{
         max-width: 500px;
 
+        .text-above-list, .text-under-list{
+            color: $dark;
+        }
+
         .list-element{
             color: $secondary;
         }
@@ -55,6 +63,7 @@
 
     .description{
         max-width: 330px;
+        color: $dark;
     }
 
     .link-logo{

@@ -82,9 +82,9 @@ export default function Form() {
                         value={message}
                         onChange={handleMessageChange}
                     ></textarea>
-                    <small className="my-2">* Indicates required fields</small>
+                    <small className="required-fields my-2">* Indicates required fields</small>
                     <button className="submit-button py-2 mb-2 w-100" type="submit">Send</button>
-                    <small>Email: {email_address}</small>
+                    <small className="company-email">Email: {email_address}</small>
                 </form>
             </div>
             <ToastContainer />

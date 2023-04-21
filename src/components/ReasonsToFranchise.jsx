@@ -16,7 +16,7 @@ export default function ReasonsToFranchise() {
                     reasons.map(element => {
                         return <div key={element.id} className="mx-0 mx-lg-5 text-start text-lg-center">
                             <h2 className="title">{element.title}</h2>
-                            <p>{element.text}</p>
+                            <p className="element-description">{element.text}</p>
                         </div>
                     })
                 }

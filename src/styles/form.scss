@@ -4,3 +4,7 @@
     background-color: $secondary;
     border: none;
 }
+
+.required-fields, .company-email, label{
+    color: $dark
+}
