@@ -9,6 +9,13 @@ $primary: #00538a;
 $secondary: #f03381;
 $background: rgb(244, 244, 255);
 
+//colors
+$lighter: #F8EDE3;
+$light: #DFD3C3;
+$dark: #D0B8A8;
+$darker: #85586F;
+$black: rgba(0, 0, 0, 0.909);
+
 // spacing
 $spacing-md: 16px;
 $spacing-lg: 32px;
@@ -17,7 +24,8 @@ $spacing-lg: 32px;
 $borderRadius: 12px;
 
 //navbar height
-$headerHeight: 150px;
+$navbarHeight: 60px;
+$jumbotronHeight: calc(100vh - $navbarHeight);
 
 @mixin breakpoint($point) {
     @if $point == md {

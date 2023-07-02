@@ -1,9 +1,9 @@
 
 // Home View pictures
-import top_banner_image from '../src/pictures/home_banner.jpeg'
+import home_banner from '../src/pictures/home_baner.JPG'
 
 // Contact View pictures
-import form_image from '../src/pictures/form_image.png'
+// import form_image from '../src/pictures/form_image.png'
 
 
 export const configuration = {
@@ -12,11 +12,11 @@ export const configuration = {
             link: '/',
             name: 'Home'
         },
-        view_one: {
+        experience: {
             link: '/experience',
             name: 'Experience'
         },
-        view_two: {
+        gallery: {
             link: '/gallery',
             name: 'Gallery'
         },
@@ -27,9 +27,44 @@ export const configuration = {
     },
     home: {
         banner: {
-            image: top_banner_image,
-            text: 'YOUR CURATED LINK TO THE UNITED STATES'
+            title: 'Carla Ribbaudo',
+            text: 'Dancer - Performer - Model'
         },
+
+        personalInfo: {
+            title: 'Personal Information',
+            fullName: 'Carla Ribbaudo',
+            age: 31,
+            height: '1.7m',
+            hairColor: 'Blonde',
+            pictureUrl: './pictures/home_baner.JPG'
+        },
+
+
+        linkToPagesTitle: 'Know me better!',
+        linkToPages: [
+            {
+                id: 0,
+                title: 'Experience',
+                buttonText: 'Watch More',
+                link: '/experience',
+                picture: home_banner
+            },
+            {
+                id: 1,
+                title: 'Gallery',
+                buttonText: 'Watch More',
+                link: '/gallery',
+                picture: home_banner
+            },
+            {
+                id: 2,
+                title: 'Contact',
+                buttonText: 'Watch More',
+                link: '/contact',
+                picture: home_banner
+            }
+        ]
     },
     experience: {
 
@@ -49,8 +84,6 @@ export const configuration = {
                 text: `We'd love to see how we can help.`
             },
         ],
-
-        logo_image: form_image,
         email_address: 'info@linkusa.us',
 
         // EMAIL CONFIGURATION

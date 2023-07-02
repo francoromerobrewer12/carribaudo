@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+.personal_info_container{
+    overflow: hidden;
+}
+
+.colored_panel{
+    background-color: $dark;
+}
+
+.picture_container{
+    position: relative;
+}
+
+.fullname{
+    color: $lighter;
+}
+
+.person_picture{
+    width: 80%;
+    height: auto;
+    z-index: 999;
+}

@@ -2,17 +2,12 @@
 
 .navbar-container{
     z-index: 999;
-    height: $headerHeight;
-    background: $primary;
-}
-
-.Navbar > .nav-logo-wrapper {
-    width: 143px;
-    height: 90px;
+    height: $navbarHeight;
+    background: $black;
 }
 
 .Navbar > .nav-items > a {
-    color: $light;
+    color: $lighter;
     font-size: 16px;
     text-decoration: none;
     margin: 15px;
@@ -22,7 +17,7 @@
 
 .Navbar > .nav-items > a:hover {
     opacity: 1;
-    color: $secondary;
+    color: $dark;
     text-decoration: underline;
 }
 
@@ -33,7 +28,7 @@
     bottom: 0;
     width: 0;
     height: 2px;
-    background: $secondary;
+    background: $dark;
     transition: all 0.45s;
 }
 

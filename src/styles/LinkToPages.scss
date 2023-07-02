@@ -1,0 +1,26 @@
+@import "./variables.scss";
+
+
+.linktopages_container{
+    background-color: $black;
+    color: $light;
+}
+
+.links{
+    color: $light !important;
+    text-decoration: none;
+}
+
+.picture{
+    width: 320px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 100% / 70% 70% 0 0;
+}
+
+.watch_more_btn{
+    background-color: $darker;
+    color: $light !important;
+    text-decoration: none;
+    border: none;
+}
